@@ -1,0 +1,25 @@
+<header class="header">
+  <div class="title">
+    <a routerLink="/" class="navbar-brand home">
+      {{ "title" | translate }}
+    </a>
+  </div>
+  <div class="dropdown">
+    <button
+      (click)="showDropdownOptions = !showDropdownOptions"
+      class="btn btn-light dropdown-toggle"
+      type="button"
+    >
+      <span>{{ "language" | translate }}</span>
+    </button>
+    <div
+      #dropdown
+      [ngClass]="{ show: showDropdownOptions }"
+      class="dropdown-menu dropdown-menu-right"
+    >
+      <button class="dropdown-item" (click)="setLang('en')">English</button>
+      <button class="dropdown-item" (click)="setLang('cz')">Čeština</button>
+      <button class="dropdown-item" (click)="setLang('ru')">Русский</button>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,16 @@
+{
+  "title": "Notes",
+  "pending": "Pending",
+  "language": "Language",
+  "editNote": "Edit note",
+  "createNote": "Create note",
+  "name": "Name",
+  "description": "Description",
+  "create": "Create",
+  "edit": "Edit",
+  "save": "Save",
+  "details": "Details",
+  "remove": "Remove",
+  "back": "Back",
+  "error": "Error!"
+}

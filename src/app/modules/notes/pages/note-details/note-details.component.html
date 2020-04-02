@@ -1,0 +1,26 @@
+<ng-container *ngIf="loading$ | async; else notLoading">
+  <app-loading></app-loading>
+</ng-container>
+
+<ng-template #notLoading>
+  <ng-container *ngIf="!(error$ | async); else error">
+    <div class="card" *ngIf="note$ | async as note">
+      <div class="card-header">
+        {{ note.name }}
+      </div>
+      <div class="card-body">
+        <p class="card-text">
+          {{ note.description }}
+        </p>
+      </div>
+    </div>
+    <div class="mt-2">
+      <a class="btn btn-primary" routerLink="/">
+        {{ "back" | translate }}
+      </a>
+    </div>
+  </ng-container>
+  <ng-template #error>
+    <app-error></app-error>
+  </ng-template>
+</ng-template>

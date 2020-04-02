@@ -1,0 +1,53 @@
+<div class="modal-content">
+  <div class="modal-header">
+    <h5 class="modal-title">
+      <span *ngIf="editMode">
+        {{ "editNote" | translate }}
+      </span>
+      <span *ngIf="!editMode">
+        {{ "createNote" | translate }}
+      </span>
+    </h5>
+    <button type="button" class="close" (click)="close()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form [formGroup]="noteForm" id="noteForm" (ngSubmit)="submit()">
+      <div class="form-group">
+        <label for="noteName">
+          {{ "name" | translate }}
+        </label>
+        <input
+          formControlName="name"
+          type="text"
+          class="form-control"
+          id="noteName"
+          ngbAutofocus
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="noteDescription">
+          {{ "description" | translate }}
+        </label>
+        <textarea
+          formControlName="description"
+          class="form-control"
+          id="noteDescription"
+          rows="6"
+        ></textarea>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button
+      type="submit"
+      [disabled]="!noteForm.valid"
+      form="noteForm"
+      class="btn btn-primary"
+    >
+      {{ "save" | translate }}
+    </button>
+  </div>
+</div>

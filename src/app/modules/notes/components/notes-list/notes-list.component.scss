@@ -1,0 +1,36 @@
+// .notes-list {
+//   list-style: none;
+//   counter-reset: list;
+//   margin: 0;
+//   padding: 0;
+//   overflow: hidden;
+//   app-notes-list-item {
+//     position: relative;
+//     display: block;
+//     height: 2rem;
+//     line-height: 2rem;
+//     margin-left: 2rem;
+//     margin-bottom: 0.25rem;
+//     padding-left: 0.5rem;
+//     padding-right: 0.5rem;
+//     color: #fff;
+//     background: #f57c00;
+//     white-space: nowrap;
+//     &:last-child {
+//       margin-bottom: 0;
+//     }
+//     &::before {
+//       content: counter(list);
+//       counter-increment: list;
+//       position: absolute;
+//       left: -2rem;
+//       top: 0;
+//       bottom: 0;
+//       width: 2rem;
+//       line-height: 2rem;
+//       text-align: center;
+//       color: #fff;
+//       background: rgba(245, 124, 0, 0.75);
+//     }
+//   }
+// }

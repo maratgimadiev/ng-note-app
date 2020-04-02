@@ -1,0 +1,16 @@
+{
+  "title": "Poznámky",
+  "pending": "Čekající",
+  "language": "Jazyk",
+  "editNote": "Upravit poznámku",
+  "createNote": "Vytvořit poznámku",
+  "name": "Jméno",
+  "description": "Popis",
+  "create": "Vytvořit",
+  "edit": "Editovat",
+  "save": "Uložit",
+  "details": "Detaily",
+  "remove": "Smazat",
+  "back": "Zpátky",
+  "error": "Chyba!"
+}

@@ -1,0 +1,23 @@
+<div class="card">
+  <div class="card-header text-truncate">
+    {{ note.name }}
+  </div>
+  <div class="card-body">
+    <p class="card-text">
+      {{ note.description | truncate: 70 }}
+    </p>
+  </div>
+  <div class="card-footer">
+    <div class="btn-group">
+      <button class="btn btn-xs btn-light" (click)="editNote()">
+        {{ "edit" | translate }}
+      </button>
+      <a class="btn btn-xs btn-light" routerLink="/{{ note.id }}">
+        {{ "details" | translate }}
+      </a>
+      <button class="btn btn-xs btn-light" (click)="removeNote()">
+        {{ "remove" | translate }}
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+.header {
+  height: 60px;
+  background-color: #0062cc;
+  padding: 0 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  margin: unset;
+  color: #fff;
+  flex: 70%;
+  .home {
+    color: #fff;
+  }
+}
+
+.right-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  .counter {
+    margin-right: 15px;
+    color: #fff;
+  }
+}
